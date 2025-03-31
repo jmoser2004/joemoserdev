@@ -36,6 +36,13 @@ CREATE TABLE IF NOT EXISTS general_info (
     descr TEXT,
     notes_for_chatgpt VARCHAR(255)
 );
+
+CREATE TABLE IF NOT EXISTS user_messages (
+    id INT AUTO_INCREMENT,
+    usermsg TEXT,
+    gptmsg TEXT,
+    PRIMARY KEY (id)
+);
 /*Populating tables*/
 /*Populating interests*/
 INSERT INTO interests (
